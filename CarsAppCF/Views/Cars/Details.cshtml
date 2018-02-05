@@ -1,0 +1,42 @@
+﻿@model CarsAppCF.Models.TravelModel.Car
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CarType.CarTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarType.CarTypeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Consumption)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Consumption)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CarId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,3 @@
+﻿Enable-Migrations -ContextTypeName CarContext -MigrationsDirectory Migrations\Cars
+add-migration -ConfigurationTypeName CarsAppCF.Migrations.Configuration "InitMigr"
+update-database -ConfigurationTypeName CarsAppCF.Migrations.Configuration
